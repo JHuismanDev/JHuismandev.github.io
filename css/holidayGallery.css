@@ -1,0 +1,102 @@
+@keyframes throwOn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 20px;
+  background: url('https://wallpapers.com/images/hd/sand-background-iwimo8swqisdizbb.jpg');
+  background-size: cover;
+  color: #000;
+  margin: auto;
+}
+
+.back-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-button a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border: 10px solid #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-button a:hover {
+  background-color: #e0e0e0;
+}
+
+.holiday-info {
+  background-color: #f9f4e9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  float: left;
+  width: calc(30% - 40px);
+  margin-right: 40px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+li {
+  text-align: center;
+  display: inline-block;
+  list-style: none;
+  position: relative;
+  border: solid 12px #fff;
+  background: #fff;
+  box-shadow: 0 0 15px 0px #555;
+  transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  top: 50px;
+  animation: throwOn 2s ease-in-out;
+}
+
+li:hover {
+  top: 0px;
+}
+
+.holidayPics {
+  text-align: center;
+  margin-top: 50px; 
+}
+
+.holiday-item {
+  margin: 20px;
+}
+
+.holiday-item img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.holiday-item img:hover {
+  transform: scale(1.8);
+}
+
+.holiday-item p {
+  margin: -15px 0 0 0;
+  font-size: 16px;
+}

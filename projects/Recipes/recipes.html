@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <header>
+        <h1>Recipe Website</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for recipes">
+            <select id="cuisineSelect">
+                <option value="">All Cuisines</option>
+                <option value="italian">Italian</option>
+                <option value="mexican">Mexican</option>
+                <option value="chinese">Chinese</option>
+                <!-- Add more options as desired -->
+            </select>
+            <button onclick="searchRecipes()">Search</button>
+        </div>
+    </header>
+    <div id="recipesContainer" class="container"></div>
+    <div id="paginationContainer" class="pagination"></div>
+
+    <!-- Recipe details modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div id="recipeDetails"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

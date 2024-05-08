@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+ 
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+  
+  .post-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .post-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  .post-text {
+    flex: 1;
+    margin-left: 20px;
+    color: #000;
+  }
+  
+  .post-text h2 {
+    margin-top: 0;
+    color: #007bff;
+  }
+  
+  .post-img {
+    flex: 1;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    position: relative;
+    border: 2px solid #007bff; /* Add a small border around the image */
+    border-radius: 5px; /* Optional: add border radius for a softer look */
+    overflow: hidden; /* Prevent images from overflowing the container */
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .post-img img {
+    width: 100%; /* Ensure images take up the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s;
+  }
+  
+  .post-img:hover img {
+    transform: scale(1.1); /* Make the image bigger on hover */
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .image-text-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .game-details {
+      margin-top: 20px;
+    }
+    .image-container {
+      max-width: 100%;
+    }
+  }

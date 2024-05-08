@@ -1,0 +1,45 @@
+.social-buttons {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  width: 40px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.linkedin-button {
+  background-image: url('../images/Logo/LinkedIn.png');
+}
+
+.github-button {
+  background-image: url('../images/Logo/Github.png');
+}
+
+.linkedin-button:hover,
+.github-button:hover {
+  background-color: #005f91; /* Darker shade of LinkedIn blue on hover */
+}
+
+.cvButton {
+  display: inline-block;
+  background-color: #050505; /* Dark navy */
+  color: #ddd;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  border: 2px solid #007bff; /* Accent color */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+}
+
+.cvBbutton:hover {
+  background-color: #007bff; /* Accent color */
+}

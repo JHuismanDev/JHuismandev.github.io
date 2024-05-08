@@ -1,0 +1,82 @@
+@keyframes throwOn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 20px;
+  background: url('https://wallpapers.com/images/hd/sand-background-iwimo8swqisdizbb.jpg');
+  background-size: cover;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo {
+  float: left;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.back-button a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  float: right;
+}
+
+.back-button a:hover {
+  background-color: #e0e0e0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 70%;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  position: relative;
+  margin: 20px;
+  border: solid 12px #fff;
+  background: #fff;
+  box-shadow: 0 0 15px 0px #555;
+  transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  animation: throwOn 2s ease-in-out;
+}
+
+li:hover {
+  top: -10px;
+  opacity: 0.8;
+}
+
+p {
+  margin: 0;
+  padding: 10px 0;
+}

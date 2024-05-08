@@ -1,0 +1,63 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JHDev - Contact Me</title>
+  <link rel="icon" type="images/favicon.ico" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <header>
+    <div class="header">
+      <h1 class="logo">JHDev</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="aboutme.html">About me</a></li>
+          <li><a href="#" class="active">Contact me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<canvas class="particles"></canvas>
+  <h2>Contact Me</h2>
+<section class="contact-me">
+  <div class="container">
+    <form id="contact-form" action="scripts/send_email.php" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <div class="error" id="name-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div class="error" id="email-error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <div class="error" id="message-error"></div>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 JHDev - Web Developer. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="scripts/form.js"></script>
+    <script src="scripts/particles.js"></script>
+</body>
+</html>

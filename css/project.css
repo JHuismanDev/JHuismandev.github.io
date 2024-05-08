@@ -1,0 +1,62 @@
+/* Arcade-style project container */
+.project {
+  display: inline-block;
+  width: calc(50% - 20px); /* 50% width with margin */
+  margin: 10px;
+  text-align: center; /* Center the contents */
+  position: relative; /* Position relative for overlay */
+  margin-top: 20px; /* Add top margin */
+}
+
+/* Arcade-style overlay */
+.project:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay with 70% opacity */
+  border-radius: 10px; /* Rounded corners */
+  z-index: -1; /* Place behind content */
+}
+
+/* Arcade-style card */
+.project .card {
+  width: 100%; /* Card width set to 100% of project container */
+  border-radius: 10px; /* Add rounded border to the card */
+  padding-top: 30px; /* Add space above the picture */
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background color with 80% opacity */
+  border: 2px solid #ff6600; /* Border color */
+}
+
+/* Arcade-style card image */
+.project .card .card-img-top {
+  max-width: 100%; /* Make the card image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Arcade-style description text */
+.project .card-text {
+  margin-bottom: 10px; /* Add slight space under the description text */
+}
+
+/* Arcade-style button */
+.project .btn {
+  background-color: #ff6600; /* Orange button color */
+  border: 2px solid #ff6600; /* Orange border color */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Button padding */
+  font-size: 16px; /* Button font size */
+  border-radius: 5px; /* Button border radius */
+  font-family: 'Press Start 2P', cursive; /* Retro font */
+  text-transform: uppercase; /* Uppercase text */
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Arcade-style button hover */
+.project .btn:hover {
+  background-color: #cc3300; /* Darker orange hover color */
+  border-color: #cc3300; /* Darker orange hover border color */
+}

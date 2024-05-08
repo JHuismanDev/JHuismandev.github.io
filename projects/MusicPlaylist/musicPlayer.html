@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JHDev - Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/gameShowcase.css">
+    <script src="https://kit.fontawesome.com/c23f53a48f.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="../../images/Logo/favicon.ico" href="../../images/Logo/favicon.ico">
+</head>
+
+<body>
+<div class="container">
+    <div class="musicPlayer">
+        <nav>
+            <div class="circle" id="playlistIcon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <img src="../../files/music/standard.png" class="song-img">
+        <h1>About me</h1>
+        <p>Koven X ROY</p>
+
+        <audio id="song">
+            <source src="../../files/music/AboutMe-Koven.mp3" type="audio/mpeg">
+        </audio>
+        <input type="range" value="0" id="progress">
+
+        <div class="controls">
+          <div class="circle" id="prevButton">
+              <i class="fa-solid fa-backward"></i>
+          </div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div class="circle" id="nextButton">
+                <i class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
